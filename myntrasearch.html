@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Myntra Search</title>
+<link rel="stylesheet" href="style.css"> </head>
+<body>
+
+<div class="search-container">
+  <input type="text" id="search-query" placeholder="Search Myntra" onkeydown="if (event.keyCode == 13) search()">
+</div>
+
+<script>
+function search() {
+  var query = document.getElementById("search-query").value;
+  // Implement your search functionality here, e.g., using AJAX or redirecting to a search results page
+  window.location.href = "https://www.myntra.com/" + query; // Example redirect
+}
+</script>
+
+</body>
+</html>

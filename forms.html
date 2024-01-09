@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <center>
+        <h1><u>Registration form</u></h1>
+    </center>
+    <form action="/NoOutputLinkGivenSoIAmShowingThisMessage" method="get">
+        <!-- action= "whereto" method="type of http request called"-->
+        <!-- label is used to connect the text to the desired buttons -->
+        <!-- type attribute is for type of input -->
+        <!-- placeholder is a text that shows before input is typed in  -->
+        <!-- name attribute is used by the server to identify the fields in form submits. -->
+        <!-- All the inputs are visible in the url while using 'get' method, whereas in 'post' method, it's a bit secretive and not all data is visible in the url (better approach) -->
+
+        <label for="firstname">First Name </label><input type="text" placeholder="Enter first name" id="firstname"
+            name="firstname">
+        <label for="lastname"> Last Name</label> <input type="text" placeholder="Enter last name" id="lastname"
+            name="lastname"><br><br>
+        Date of birth <input type="date" name="dob"><br><br>
+        Gender: <input type="radio" name="Gender" id="male"><label for="male">Male</label> <input type="radio"
+            name="Gender" id="female"><label for="female">Female</label><br><br>
+        <label for="phn">Phone number </label><input id="phn" type="number" placeholder="+91XXXXXXXXXX"
+            name="phone"><br><br>
+        <label for="email"> Email </label><input id="email" type="email" placeholder="abc@xyz.com" name="email"><br><br>
+        <label for="pin"> PIN</label> <input id="pin" type="password" placeholder="****" name="pin"><br><br>
+        Company rating <input type="range" min="0" max="5"><br><br>
+        Favourite color <input type="color" name="favcolor"><br><br>
+        Date and time of filling the form: <input type="datetime-local" name="formfilldate"><br><br>
+        Resume <input type="file" accept=".docx,.doc,.pptx,.pdf,.ppt" name="file"><br><br>
+        <b>Terms and Conditions</b> <br><input type="checkbox" id="tnc1"><label for="tnc1"> I have read all the <u
+                style="color:blue">terms and
+                conditions</u>.</label><br>
+        <input type="checkbox" id="tnc2"><label for="tnc2"> All the details filled in the form are best known to my
+            information.</label><br><br>
+        <input type="submit" value="Click to submit"><input type="reset" value="Reset"><br><br>
+
+        <!-- button is an element takes to the defined form action unless its told not to, as a default being submit-->
+        <button>This will act like a Submit button</button>
+        <button type="button">Normal button</button>
+    </form>
+    <hr>
+
+    <!-- connecting to a search engine (youtube and google) -->
+    <h1>Let's have some fun!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png?20220706172052" width="100"
+        height="70">
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form><br>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+</body>
+
+</html>
